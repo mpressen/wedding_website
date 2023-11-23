@@ -1,143 +1,147 @@
 @font-face {
-    font-family: "Montserrat";
-    src: url("../fonts/Montserrat-Regular.ttf");
-    font-display: swap
-  }
-  
-  @font-face {
-    font-family: "MontserratSemiBold";
-    src: url("../fonts/Montserrat-SemiBold.ttf");
-    font-display: swap
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Regular.ttf");
+  font-display: swap
+}
+
+@font-face {
+  font-family: "MontserratSemiBold";
+  src: url("../fonts/Montserrat-SemiBold.ttf");
+  font-display: swap
+}
+
+@font-face {
+  font-family: "MontserratItalic";
+  src: url("../fonts/Montserrat-Italic.ttf");
+  font-display: swap
+}
+
+$primary-color: #0074AD;
+$font-color: #000000;
+$website-background: #FFFFFF;
+
+// Reset styles
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+.full-height {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+// shared styles
+body {
+  font-family: "Montserrat";
+  background-color: $website-background;
+  color: $font-color;
+
+  // ul {
+  //   list-style-type: none;
+  // }
+
+  a {
+    text-decoration: none;
+    color: $font-color;
+    text-align: center;
+
+    &:hover {
+      text-decoration: underline;
+    }
   }
 
-  @font-face {
-    font-family: "MontserratItalic";
-    src: url("../fonts/Montserrat-Italic.ttf");
-    font-display: swap
+  h1 {
+    font-size: 32px;
+    font-weight: normal;
+    text-align: center;
+    // line-height: 64px;
   }
-  
-  $primary-color: #0074AD;
-  $font-color: #000000;
-  $website-background: #FFFFFF;
-  
-  // Reset styles
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+
+  h2 {
+    font-size: 24px;
+    font-weight: normal;
+    text-align: center;
+    // line-height: 48px;
   }
-  
-  html,
-  body {
-    height: 100%;
-  }
-  
-  .full-height {
+
+  // h3 {
+  //   font-weight: normal;
+  //   text-align: center;
+  //   line-height: 32px;
+  // }
+
+  // h4,
+  // p {
+  //   font-size: 16px;
+  //   line-height: 24px;
+  // }
+
+  // .xs {
+  //   font-size: 18px;
+  //   line-height: 27px;
+  // }
+
+  section {
     display: flex;
     flex-direction: column;
-    height: 100%;
-    overflow-x: hidden;
+    align-items: center;
+    padding: 64px 8px;
+    gap: 64px;
   }
 
-  // shared styles
-body {
-    font-family: "Montserrat";
-    background-color: $website-background;
-    color: $font-color;
-  
-    // ul {
-    //   list-style-type: none;
-    // }
-  
-    a {
-      text-decoration: none;
-      color: $font-color;
-      text-align: center;
-  
-      &:hover {
-        text-decoration: underline;
-      }
-    }
-  
-    h1 {
-      font-size: 32px;
-      font-weight: normal;
-      text-align: center;
-      line-height: 64px;
-    }
-  
-    h2 {
-      font-size: 24px;
-      font-weight: normal;
-      text-align: center;
-      line-height: 48px;
-    }
-  
-    // h3 {
-    //   font-weight: normal;
-    //   text-align: center;
-    //   line-height: 32px;
-    // }
-  
-    // h4,
-    // p {
-    //   font-size: 16px;
-    //   line-height: 24px;
-    // }
-  
-    // .xs {
-    //   font-size: 18px;
-    //   line-height: 27px;
-    // }
-  
-    section {
-      display: flex;
-      padding: 64px 8px;
-      gap: 64px;
-    }
-  
-    // .xl {
-    //   font-size: 24px;
-    //   line-height: 36px;
-    // }
-  
-    // .xxl {
-    //   font-size: 32px;
-    //   line-height: 48px;
-    //   font-weight: 800;
-    // }
-  
-    // .xxxl {
-    //   font-size: 48px;
-    //   font-weight: 800;
-    // }
-  
-    // .button {
-    //   display: flex;
-    //   padding: 8px 32px;
-    //   justify-content: center;
-    //   align-items: center;
-    //   border-radius: 8px;
-    //   background-color: $primary-color;
-    //   color: white;
-    //   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-    // }
-  
-    .italic {
-      font-style: italic;
-    }
-  
-    // .margin-top {
-    //   margin-top: 64px;
-    // }
-  
-    .semi-bold {
-      font-family: "MontserratSemiBold";
-    }
+  // .xl {
+  //   font-size: 24px;
+  //   line-height: 36px;
+  // }
+
+  // .xxl {
+  //   font-size: 32px;
+  //   line-height: 48px;
+  //   font-weight: 800;
+  // }
+
+  // .xxxl {
+  //   font-size: 48px;
+  //   font-weight: 800;
+  // }
+
+  // .button {
+  //   display: flex;
+  //   padding: 8px 32px;
+  //   justify-content: center;
+  //   align-items: center;
+  //   border-radius: 8px;
+  //   background-color: $primary-color;
+  //   color: white;
+  //   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  // }
+
+  .margin-top {
+    margin-top: 64px;
+  }
+
+  .italic {
+    font-style: italic;
+  }
+
+  .semi-bold {
+    font-family: "MontserratSemiBold";
+  }
 }
 
 .hero {
-  justify-content: center;
+  // justify-content: center;
+  // display: flex;
+  // flex-direction: column;
 
   .container {
     display: flex;
@@ -152,6 +156,122 @@ body {
       align-items: center;
       margin: 32px;
       gap: 32px;
+
+      img {
+        min-width: 304px;
+
+        @media only screen and (max-width: 418px) {
+          width: 100%;
+        }
+      }
     }
+  }
+
+  .phone {
+    color: white;
+    padding: 16px 64px;
+    border-radius: 15px;
+    background: var(--primary-color, #0074AD);
+  }
+}
+
+.separator {
+  // margin: 32px;
+}
+
+#etiomedecine img {
+  max-width: 1140.73px;
+  width: 100%;
+  min-width: 304px;
+}
+
+.title {
+  color: $primary-color;
+}
+
+.text-body {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  /* 150% */
+  max-width: 1152px;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 64px;
+}
+
+.beginning {
+  max-width: 787.81px;
+}
+
+#mon-parcours {
+  .flex-row {
+    @media only screen and (max-width: 743px) {
+      justify-content: center;
+      flex-wrap: wrap-reverse;
+    }
+  }
+
+  .diploma {
+    text-align: center
+  }
+
+}
+
+#infos-pratiques {
+  .addresses {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 64px;
+    // align-items: center;
+    justify-content: center;
+
+    .address {
+      display: flex;
+      flex-direction: column;
+      gap: 32px;
+
+      iframe {
+        border-radius: 16px;
+        max-width: 100%;
+      }
+    }
+  }
+
+  .texts {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    text-align: center;
+
+    .phone {
+      color: black;
+      padding: 16px 64px;
+      border-radius: 15px;
+      border: 1px solid black;
+    }
+  }
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+
+  a {
+    text-decoration: underline;
+    font-size: 20px;
+    font-weight: normal;
+    text-align: center;
+    line-height: 30px;
+  }
+
+  p {
+    line-height: 24px;
   }
 }
