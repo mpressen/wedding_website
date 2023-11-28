@@ -45,10 +45,6 @@ body {
   background-color: $website-background;
   color: $font-color;
 
-  // ul {
-  //   list-style-type: none;
-  // }
-
   a {
     text-decoration: none;
     color: $font-color;
@@ -63,32 +59,13 @@ body {
     font-size: 32px;
     font-weight: normal;
     text-align: center;
-    // line-height: 64px;
   }
 
   h2 {
     font-size: 24px;
     font-weight: normal;
     text-align: center;
-    // line-height: 48px;
   }
-
-  // h3 {
-  //   font-weight: normal;
-  //   text-align: center;
-  //   line-height: 32px;
-  // }
-
-  // h4,
-  // p {
-  //   font-size: 16px;
-  //   line-height: 24px;
-  // }
-
-  // .xs {
-  //   font-size: 18px;
-  //   line-height: 27px;
-  // }
 
   section {
     display: flex;
@@ -97,33 +74,6 @@ body {
     padding: 64px 8px;
     gap: 64px;
   }
-
-  // .xl {
-  //   font-size: 24px;
-  //   line-height: 36px;
-  // }
-
-  // .xxl {
-  //   font-size: 32px;
-  //   line-height: 48px;
-  //   font-weight: 800;
-  // }
-
-  // .xxxl {
-  //   font-size: 48px;
-  //   font-weight: 800;
-  // }
-
-  // .button {
-  //   display: flex;
-  //   padding: 8px 32px;
-  //   justify-content: center;
-  //   align-items: center;
-  //   border-radius: 8px;
-  //   background-color: $primary-color;
-  //   color: white;
-  //   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-  // }
 
   .margin-top {
     margin-top: 64px;
@@ -139,9 +89,6 @@ body {
 }
 
 .hero {
-  // justify-content: center;
-  // display: flex;
-  // flex-direction: column;
 
   .container {
     display: flex;
@@ -173,10 +120,6 @@ body {
     border-radius: 15px;
     background: var(--primary-color, #0074AD);
   }
-}
-
-.separator {
-  // margin: 32px;
 }
 
 #etiomedecine img {
@@ -274,4 +217,16 @@ body {
   p {
     line-height: 24px;
   }
+}
+
+.markdown-separator-xl {
+  margin: 64px 0;
+}
+
+.markdown-separator-l {
+  margin: 32px 0;
+}
+
+.markdown-separator-m {
+  margin: 16px 0;
 }

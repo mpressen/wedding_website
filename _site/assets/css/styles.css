@@ -184,6 +184,18 @@ body .semi-bold {
   line-height: 24px;
 }
 
+.markdown-separator-xl {
+  margin: 64px 0;
+}
+
+.markdown-separator-l {
+  margin: 32px 0;
+}
+
+.markdown-separator-m {
+  margin: 16px 0;
+}
+
 header {
   background-color: black;
 }
@@ -263,6 +275,16 @@ footer {
   align-items: center;
   width: 100%;
   background-color: black;
+}
+footer div {
+  padding-top: 8px;
+  display: flex;
+  flex-direction: row;
+  font-size: 10px;
+  color: white;
+  gap: 8px;
+}
+footer div a {
   color: white;
 }
 
