@@ -122,10 +122,15 @@ body {
   }
 }
 
+.hero img {
+  aspect-ratio: 402/268;
+}
+
 #etiomedecine img {
-  max-width: 1140.73px;
+  max-width: 1140px;
   width: 100%;
   min-width: 304px;
+  aspect-ratio: 1140/500;
 }
 
 .title {
