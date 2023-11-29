@@ -131,37 +131,37 @@ body .semi-bold {
 }
 
 @media only screen and (max-width: 743px) {
-  #mon-parcours .flex-row {
+  #parcours .flex-row {
     justify-content: center;
     flex-wrap: wrap-reverse;
   }
 }
-#mon-parcours .diploma {
+#parcours .diploma {
   text-align: center;
 }
 
-#infos-pratiques .addresses {
+#infos .addresses {
   display: flex;
   flex-wrap: wrap;
   gap: 64px;
   justify-content: center;
 }
-#infos-pratiques .addresses .address {
+#infos .addresses .address {
   display: flex;
   flex-direction: column;
   gap: 32px;
 }
-#infos-pratiques .addresses .address iframe {
+#infos .addresses .address iframe {
   border-radius: 16px;
   max-width: 100%;
 }
-#infos-pratiques .texts {
+#infos .texts {
   display: flex;
   flex-direction: column;
   gap: 32px;
   text-align: center;
 }
-#infos-pratiques .texts .phone {
+#infos .texts .phone {
   color: black;
   padding: 16px 64px;
   border-radius: 15px;

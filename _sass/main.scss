@@ -152,7 +152,7 @@ body {
   max-width: 787.81px;
 }
 
-#mon-parcours {
+#parcours {
   .flex-row {
     @media only screen and (max-width: 743px) {
       justify-content: center;
@@ -166,7 +166,7 @@ body {
 
 }
 
-#infos-pratiques {
+#infos {
   .addresses {
     display: flex;
     flex-wrap: wrap;
