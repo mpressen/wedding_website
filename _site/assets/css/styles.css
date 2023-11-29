@@ -100,10 +100,6 @@ body .semi-bold {
   background: var(--primary-color, #0074AD);
 }
 
-.hero img {
-  aspect-ratio: 402/268;
-}
-
 #etiomedecine img {
   max-width: 1140px;
   width: 100%;
@@ -203,9 +199,6 @@ body .semi-bold {
 
 header {
   background-color: black;
-}
-header img {
-  aspect-ratio: 285/74;
 }
 header .topnav {
   margin: auto;
