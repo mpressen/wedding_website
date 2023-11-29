@@ -16,16 +16,3 @@ function toggleMenu() {
   }
 }
 
-window.addEventListener('load', () => {
-  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-      e.preventDefault();
-      const hashval = this.getAttribute('href')
-      document.querySelector(hashval).scrollIntoView({
-        behavior: 'smooth'
-      });
-      history.pushState(null, null, hashval)
-    });
-  });
-});
-
