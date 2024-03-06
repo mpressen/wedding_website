@@ -1,6 +1,6 @@
-- name: L'Étiomédecine
-  url: 'https://etiomedecine-bretagne.fr#etiomedecine'
-- name: Qui suis-je ?
-  url: 'https://etiomedecine-bretagne.fr#parcours'
-- name: Infos pratiques
-  url: 'https://etiomedecine-bretagne.fr#infos'
+- name: Déroulé
+  url: '#deroule'
+- name: Foire aux questions
+  url: '#faq'
+- name: Contacts
+  url: '#contacts'

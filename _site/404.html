@@ -5,45 +5,38 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="icon" href="favicon.png" type="image/x-icon" />
+
+
   <title></title>
   <link rel="stylesheet" href="./assets/css/styles.css">
-  
   <!-- Primary Meta Tags -->
-  <meta name="title" content="David Jegou | Étiomédecine" />
-  <meta name="description" content="David Jegou est praticien en étiomédecine. Il reçoit dans son cabinet à Orvault, près de Nantes, ou dans son cabinet à Belz, près d'Auray." />
+  <meta name="title" content="Camille & Maximilien | Mariage" />
+  <meta name="description" content="Site du mariage de Camille et Maximilien Pressensé" />
 
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website" />
   <meta property="og:locale" content="fr_FR" />
-  <meta property="og:url" content="https://etiomedecine-bretagne.fr" />
-  <meta property="og:title" content="David Jegou | Étiomédecine" />
-  <meta property="og:description" content="David Jegou est praticien en étiomédecine. Il reçoit dans son cabinet à Orvault, près de Nantes, ou dans son cabinet à Belz, près d'Auray." />
-  <meta property="og:image" content="./assets/images/logo.webp" />
+  <meta property="og:url" content="http://localhost:4000" />
+  <meta property="og:title" content="Camille & Maximilien | Mariage" />
+  <meta property="og:description" content="Site du mariage de Camille et Maximilien Pressensé" />
+  <meta property="og:image" content="./assets/images/logo.png" />
 
   <!-- Twitter -->
   <meta property="twitter:card" content="summary_large_image" />
-  <meta property="twitter:url" content="https://etiomedecine-bretagne.fr" />
-  <meta property="twitter:title" content="David Jegou | Étiomédecine" />
-  <meta property="twitter:description" content="David Jegou est praticien en étiomédecine. Il reçoit dans son cabinet à Orvault, près de Nantes, ou dans son cabinet à Belz, près d'Auray." />
-  <meta property="twitter:image" content="./assets/images/logo.webp" />
+  <meta property="twitter:url" content="http://localhost:4000" />
+  <meta property="twitter:title" content="Camille & Maximilien | Mariage" />
+  <meta property="twitter:description" content="Site du mariage de Camille et Maximilien Pressensé" />
+  <meta property="twitter:image" content="./assets/images/logo.png" />
 
   <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "WebPage",
-      "description": "David Jegou est praticien en étiomédecine. Il reçoit dans son cabinet à Orvault, près de Nantes, ou dans son cabinet à Belz, près d'Auray.",
-      "headline": "David Jegou | Étiomédecine",
-      "publisher": {
-        "@type":"Organization",
-        "logo": {
-          "@type":"ImageObject",
-          "url":"./assets/images/logo.webp"
-        }
-      },
-      "url":"https://etiomedecine-bretagne.fr"
+      "description": "Site du mariage de Camille et Maximilien Pressensé",
+      "headline": "Camille & Maximilien | Mariage",
+      "url":"http://localhost:4000"
     }
   </script>
-  
   <script defer type="text/javascript" src="./assets/js/header.js"></script>
 </head>
 
@@ -53,19 +46,18 @@
   <div class="topnav">
     <a href='/'>
       <picture>
-        <source media="(min-width: 360px)" srcset="./assets/images/logo.svg">
-        <img src="./assets/images/small_logo.svg" alt="David Jegou, praticien en Étiomédecine" width="285"
-          height="74" />
+        <source media="(min-width: 440px)" srcset="./assets/images/logo.png">
+        <img src="./assets/images/small_logo.png" alt="Camille & Maximilien" />
       </picture>
 
     </a>
     <nav>
       
-      <a href="https://etiomedecine-bretagne.fr#etiomedecine" title="L'Étiomédecine">L'Étiomédecine</a>
+      <a href="#deroule" title="Déroulé">Déroulé</a>
       
-      <a href="https://etiomedecine-bretagne.fr#parcours" title="Qui suis-je ?">Qui suis-je ?</a>
+      <a href="#faq" title="Foire aux questions">Foire aux questions</a>
       
-      <a href="https://etiomedecine-bretagne.fr#infos" title="Infos pratiques">Infos pratiques</a>
+      <a href="#contacts" title="Contacts">Contacts</a>
       
     </nav>
     <div class="hamburger-lines" onclick="toggleMenu()">
@@ -76,11 +68,11 @@
   </div>
   <div class='sandwitch-menu' id="myLinks">
     
-    <a href="https://etiomedecine-bretagne.fr#etiomedecine" title="L'Étiomédecine">L'Étiomédecine</a>
+    <a href="#deroule" title="Déroulé">Déroulé</a>
     
-    <a href="https://etiomedecine-bretagne.fr#parcours" title="Qui suis-je ?">Qui suis-je ?</a>
+    <a href="#faq" title="Foire aux questions">Foire aux questions</a>
     
-    <a href="https://etiomedecine-bretagne.fr#infos" title="Infos pratiques">Infos pratiques</a>
+    <a href="#contacts" title="Contacts">Contacts</a>
     
   </div>
 </header>

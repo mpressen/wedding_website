@@ -1,23 +1,23 @@
 @font-face {
-  font-family: "Montserrat";
-  src: url("../fonts/Montserrat-Regular.ttf");
+  font-family: "LibreCaslonText";
+  src: url("../fonts/LibreCaslonText-Regular.ttf");
   font-display: swap
 }
 
 @font-face {
-  font-family: "MontserratSemiBold";
-  src: url("../fonts/Montserrat-SemiBold.ttf");
+  font-family: "LibreCaslonTextBold";
+  src: url("../fonts/LibreCaslonText-Bold.ttf");
   font-display: swap
 }
 
 @font-face {
-  font-family: "MontserratItalic";
-  src: url("../fonts/Montserrat-Italic.ttf");
+  font-family: "LibreCaslonTextItalic";
+  src: url("../fonts/LibreCaslonText-Italic.ttf");
   font-display: swap
 }
 
-$primary-color: #0074AD;
-$font-color: #000000;
+$primary-color: #E5DFC8;
+$font-color: #433618;
 $website-background: #FFFFFF;
 
 // Reset styles
@@ -27,21 +27,21 @@ $website-background: #FFFFFF;
   box-sizing: border-box;
 }
 
-html,
-body {
-  height: 100%;
-}
+// html,
+// body {
+//   height: 100%;
+// }
 
-.full-height {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  overflow-x: hidden;
-}
+// .full-height {
+//   display: flex;
+//   flex-direction: column;
+//   height: 100%;
+//   overflow-x: hidden;
+// }
 
 // shared styles
 body {
-  font-family: "Montserrat";
+  font-family: "LibreCaslonText";
   background-color: $website-background;
   color: $font-color;
 

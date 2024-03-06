@@ -1,16 +1,16 @@
 @font-face {
-  font-family: "Montserrat";
-  src: url("../fonts/Montserrat-Regular.ttf");
+  font-family: "LibreCaslonText";
+  src: url("../fonts/LibreCaslonText-Regular.ttf");
   font-display: swap;
 }
 @font-face {
-  font-family: "MontserratSemiBold";
-  src: url("../fonts/Montserrat-SemiBold.ttf");
+  font-family: "LibreCaslonTextBold";
+  src: url("../fonts/LibreCaslonText-Bold.ttf");
   font-display: swap;
 }
 @font-face {
-  font-family: "MontserratItalic";
-  src: url("../fonts/Montserrat-Italic.ttf");
+  font-family: "LibreCaslonTextItalic";
+  src: url("../fonts/LibreCaslonText-Italic.ttf");
   font-display: swap;
 }
 * {
@@ -19,26 +19,14 @@
   box-sizing: border-box;
 }
 
-html,
 body {
-  height: 100%;
-}
-
-.full-height {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  overflow-x: hidden;
-}
-
-body {
-  font-family: "Montserrat";
+  font-family: "LibreCaslonText";
   background-color: #FFFFFF;
-  color: #000000;
+  color: #433618;
 }
 body a {
   text-decoration: none;
-  color: #000000;
+  color: #433618;
   text-align: center;
 }
 body a:hover {
@@ -108,7 +96,7 @@ body .semi-bold {
 }
 
 .title {
-  color: #0074AD;
+  color: #E5DFC8;
 }
 
 .text-body {
@@ -198,7 +186,7 @@ body .semi-bold {
 }
 
 header {
-  background-color: black;
+  background-color: #E5DFC8;
 }
 header .topnav {
   margin: auto;
@@ -220,10 +208,8 @@ header .topnav nav {
     gap: 64px;
   }
 }
-header .topnav nav a {
-  color: white;
-}
 header .hamburger-lines {
+  margin-right: 8px;
   cursor: pointer;
   height: 26px;
   width: 32px;
@@ -260,9 +246,6 @@ header .sandwitch-menu {
   align-items: center;
   justify-content: center;
   gap: 32px;
-}
-header .sandwitch-menu a {
-  color: white;
 }
 @media only screen and (min-width: 834px) {
   header .sandwitch-menu {

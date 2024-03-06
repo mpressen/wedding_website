@@ -5,9 +5,10 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="icon" href="favicon.png" type="image/x-icon" />
+
+
   <title>{{ page.title }}</title>
   <link rel="stylesheet" href="./assets/css/styles.css">
-  {% if page.sitemap != false %}
   <!-- Primary Meta Tags -->
   <meta name="title" content="{{ site.title }}" />
   <meta name="description" content="{{ site.description }}" />
@@ -33,17 +34,9 @@
       "@type": "WebPage",
       "description": "{{ site.description }}",
       "headline": "{{ site.title }}",
-      "publisher": {
-        "@type":"Organization",
-        "logo": {
-          "@type":"ImageObject",
-          "url":"{{ site.logo }}"
-        }
-      },
       "url":"{{ site.url }}"
     }
   </script>
-  {% endif %}
   <script defer type="text/javascript" src="./assets/js/header.js"></script>
 </head>
 
