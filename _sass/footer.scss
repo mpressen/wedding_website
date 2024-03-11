@@ -3,18 +3,5 @@ footer {
   flex-direction: column;
   align-items: center;
   width: 100%;
-  background-color: black;
-
-  div {
-    padding-top: 8px;
-    display: flex;
-    flex-direction: row;
-    font-size: 10px;
-    color: white;
-    gap: 8px;
-
-    a {
-      color: white;
-    }
-  }
+  background-color: #E5DFC8;
 }
