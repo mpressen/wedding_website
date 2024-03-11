@@ -32,13 +32,13 @@ body a {
 body a:hover {
   text-decoration: underline;
 }
-body h1 {
-  font-size: 32px;
+body h1, body h2 {
+  font-size: 48px;
   font-weight: normal;
   text-align: center;
 }
-body h2 {
-  font-size: 24px;
+body h3 {
+  font-size: 32px;
   font-weight: normal;
   text-align: center;
 }
@@ -55,8 +55,14 @@ body .margin-top {
 body .italic {
   font-style: italic;
 }
-body .semi-bold {
-  font-family: "MontserratSemiBold";
+body .bold {
+  font-weight: bold;
+}
+body .font-64 {
+  font-size: 64px;
+}
+body .font-36 {
+  font-size: 36px;
 }
 
 .hero .container {
@@ -70,22 +76,36 @@ body .semi-bold {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 32px;
+  margin: 0px 32px;
   gap: 32px;
+}
+.hero .container .cabinet p {
+  text-align: center;
 }
 .hero .container .cabinet img {
   min-width: 304px;
 }
-@media only screen and (max-width: 418px) {
+@media only screen and (max-width: 620px) {
   .hero .container .cabinet img {
     width: 100%;
   }
 }
-.hero .phone {
-  color: white;
-  padding: 16px 64px;
-  border-radius: 15px;
-  background: var(--primary-color, #0074AD);
+.hero .container.text {
+  flex-direction: column;
+}
+.hero .container .text-body {
+  font-size: 16px;
+  line-height: 32px;
+  /* 150% */
+  max-width: 1152px;
+}
+.hero .container img {
+  min-width: 304px;
+}
+@media only screen and (max-width: 1000px) {
+  .hero .container img {
+    width: 100%;
+  }
 }
 
 #etiomedecine img {
@@ -97,15 +117,6 @@ body .semi-bold {
 
 .title {
   color: #E5DFC8;
-}
-
-.text-body {
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 24px;
-  /* 150% */
-  max-width: 1152px;
 }
 
 .flex-row {
