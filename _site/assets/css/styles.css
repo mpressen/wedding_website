@@ -32,7 +32,8 @@ body a {
 body a:hover {
   text-decoration: underline;
 }
-body h1, body h2 {
+body h1,
+body h2 {
   font-size: 48px;
   font-weight: normal;
   text-align: center;
@@ -72,21 +73,21 @@ body .font-36 {
   gap: 64px;
   flex-wrap: wrap;
 }
-.hero .container .cabinet {
+.hero .container .column {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: 0px 32px;
   gap: 32px;
 }
-.hero .container .cabinet p {
+.hero .container .column p {
   text-align: center;
 }
-.hero .container .cabinet img {
+.hero .container .column img {
   min-width: 304px;
 }
 @media only screen and (max-width: 620px) {
-  .hero .container .cabinet img {
+  .hero .container .column img {
     width: 100%;
   }
 }
@@ -108,22 +109,46 @@ body .font-36 {
   }
 }
 
-#etiomedecine img {
-  max-width: 1140px;
-  width: 100%;
-  min-width: 304px;
-  aspect-ratio: 1140/500;
+#deroule .container {
+  display: flex;
+  flex-direction: column;
+  width: 1152px;
+  align-items: baseline;
+  gap: 64px;
 }
-
-.title {
-  color: #E5DFC8;
+@media only screen and (max-width: 1168px) {
+  #deroule .container {
+    width: 100%;
+  }
 }
-
-.flex-row {
+#deroule .container .flex-row {
+  margin-left: 64px;
   display: flex;
   flex-direction: row;
   align-items: center;
   gap: 64px;
+  margin-bottom: 32px;
+}
+#deroule .container .flex-row h4,
+#deroule .container .flex-row p {
+  font-size: 24px;
+}
+#deroule .container .flex-row h4 {
+  min-width: 80px;
+}
+@media only screen and (max-width: 695px) {
+  #deroule .container .flex-row h4,
+  #deroule .container .flex-row p {
+    font-size: 16px;
+  }
+  #deroule .container .flex-row h4 {
+    min-width: 50px;
+  }
+}
+@media only screen and (max-width: 462px) {
+  #deroule .container .flex-row {
+    margin-left: 0px;
+  }
 }
 
 .beginning {
