@@ -17,6 +17,7 @@
 }
 
 $primary-color: #E5DFC8;
+$secondary-color: #E5DFC8;
 $font-color: #433618;
 $website-background: #FFFFFF;
 
@@ -149,13 +150,14 @@ body {
 #deroule {
 
   .container {
+    margin-left: 16px;
     display: flex;
     flex-direction: column;
-    width: 1152px;
+    width: 800px;
     align-items: baseline;
     gap: 64px;
 
-    @media only screen and (max-width: 1168px) {
+    @media only screen and (max-width: 816px) {
       width: 100%;
     }
 
@@ -176,7 +178,7 @@ body {
         min-width: 80px;
       }
 
-      @media only screen and (max-width: 695px) {
+      @media only screen and (max-width: 548px) {
 
         h4,
         p {
@@ -187,9 +189,6 @@ body {
           min-width: 50px;
         }
 
-      }
-
-      @media only screen and (max-width: 462px) {
         margin-left: 0px;
       }
     }
@@ -197,6 +196,170 @@ body {
 
   ;
 }
+
+#faq {
+  .container {
+    margin: 0 auto;
+    width: 600px;
+
+    @media only screen and (max-width: 616px) {
+      width: 100%;
+    }
+
+    .accordion {
+      .accordion-item {
+        border-bottom: 1px solid $primary-color;
+
+
+        button[aria-expanded='true'] {
+          border-bottom: 1px solid $primary_color;
+        }
+      }
+
+      button {
+        position: relative;
+        display: block;
+        text-align: left;
+        width: 100%;
+        padding: 16px 0;
+        color: $font-color;
+        font-size: 20px;
+        font-weight: 200;
+        border: none;
+        background: none;
+        outline: none;
+
+        &:hover,
+        &:focus {
+          cursor: pointer;
+          color: black;
+
+          &::after {
+            cursor: pointer;
+            color: $primary_color;
+            border: 1px solid $primary_color;
+          }
+        }
+
+        .accordion-title {
+          @media only screen and (max-width: 370px) {
+            display: inline-block;
+            width: 280px;
+          }
+        }
+
+        .icon {
+          display: inline-block;
+          position: absolute;
+          top: 18px;
+          right: 0;
+          width: 22px;
+          height: 22px;
+          border: 1px solid;
+          border-radius: 22px;
+
+          &::before {
+            display: block;
+            position: absolute;
+            content: '';
+            top: 9px;
+            left: 5px;
+            width: 10px;
+            height: 2px;
+            background: currentColor;
+          }
+
+          &::after {
+            display: block;
+            position: absolute;
+            content: '';
+            top: 5px;
+            left: 9px;
+            width: 2px;
+            height: 10px;
+            background: currentColor;
+          }
+        }
+      }
+
+      button[aria-expanded='true'] {
+        color: $primary_color;
+
+        .icon {
+          &::after {
+            width: 0;
+          }
+        }
+
+        +.accordion-content {
+          opacity: 1;
+          max-height: 11em;
+          transition: all 200ms linear;
+          will-change: opacity, max-height;
+
+          &.plus {
+            max-height: 22em;
+          }
+
+          &.plusplus {
+            max-height: 72em;
+          }
+
+          @media only screen and (max-width: 616px) {
+            max-height: 18em;
+
+            &.plus {
+              max-height: 28em;
+            }
+
+            &.plusplus {
+              max-height: 84em;
+            }
+          }
+        }
+      }
+
+      .accordion-content {
+        opacity: 0;
+        max-height: 0;
+        overflow: hidden;
+        transition: opacity 200ms linear, max-height 200ms linear;
+        will-change: opacity, max-height;
+
+        a {
+          text-decoration: underline;
+        }
+
+        &.flex {
+          display: flex;
+          align-items: center;
+          gap: 64px;
+
+          @media only screen and (max-width: 439px) {
+            flex-wrap: wrap;
+            flex-direction: column-reverse;
+            gap: 0px;
+
+            a {
+              margin: 32px auto 0px;
+            }
+          }
+        }
+
+        p {
+          margin: 32px 0;
+          line-height: 24px;
+        }
+      }
+    }
+
+    ul {
+      list-style-type: square;
+      margin-left: 16px;
+    }
+  }
+}
+
 
 
 

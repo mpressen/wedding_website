@@ -110,13 +110,14 @@ body .font-36 {
 }
 
 #deroule .container {
+  margin-left: 16px;
   display: flex;
   flex-direction: column;
-  width: 1152px;
+  width: 800px;
   align-items: baseline;
   gap: 64px;
 }
-@media only screen and (max-width: 1168px) {
+@media only screen and (max-width: 816px) {
   #deroule .container {
     width: 100%;
   }
@@ -136,7 +137,10 @@ body .font-36 {
 #deroule .container .flex-row h4 {
   min-width: 80px;
 }
-@media only screen and (max-width: 695px) {
+@media only screen and (max-width: 548px) {
+  #deroule .container .flex-row {
+    margin-left: 0px;
+  }
   #deroule .container .flex-row h4,
   #deroule .container .flex-row p {
     font-size: 16px;
@@ -145,10 +149,141 @@ body .font-36 {
     min-width: 50px;
   }
 }
-@media only screen and (max-width: 462px) {
-  #deroule .container .flex-row {
-    margin-left: 0px;
+
+#faq .container {
+  margin: 0 auto;
+  width: 600px;
+}
+@media only screen and (max-width: 616px) {
+  #faq .container {
+    width: 100%;
   }
+}
+#faq .container .accordion .accordion-item {
+  border-bottom: 1px solid #E5DFC8;
+}
+#faq .container .accordion .accordion-item button[aria-expanded=true] {
+  border-bottom: 1px solid #E5DFC8;
+}
+#faq .container .accordion button {
+  position: relative;
+  display: block;
+  text-align: left;
+  width: 100%;
+  padding: 16px 0;
+  color: #433618;
+  font-size: 20px;
+  font-weight: 200;
+  border: none;
+  background: none;
+  outline: none;
+}
+#faq .container .accordion button:hover, #faq .container .accordion button:focus {
+  cursor: pointer;
+  color: black;
+}
+#faq .container .accordion button:hover::after, #faq .container .accordion button:focus::after {
+  cursor: pointer;
+  color: #E5DFC8;
+  border: 1px solid #E5DFC8;
+}
+@media only screen and (max-width: 370px) {
+  #faq .container .accordion button .accordion-title {
+    display: inline-block;
+    width: 280px;
+  }
+}
+#faq .container .accordion button .icon {
+  display: inline-block;
+  position: absolute;
+  top: 18px;
+  right: 0;
+  width: 22px;
+  height: 22px;
+  border: 1px solid;
+  border-radius: 22px;
+}
+#faq .container .accordion button .icon::before {
+  display: block;
+  position: absolute;
+  content: "";
+  top: 9px;
+  left: 5px;
+  width: 10px;
+  height: 2px;
+  background: currentColor;
+}
+#faq .container .accordion button .icon::after {
+  display: block;
+  position: absolute;
+  content: "";
+  top: 5px;
+  left: 9px;
+  width: 2px;
+  height: 10px;
+  background: currentColor;
+}
+#faq .container .accordion button[aria-expanded=true] {
+  color: #E5DFC8;
+}
+#faq .container .accordion button[aria-expanded=true] .icon::after {
+  width: 0;
+}
+#faq .container .accordion button[aria-expanded=true] + .accordion-content {
+  opacity: 1;
+  max-height: 11em;
+  transition: all 200ms linear;
+  will-change: opacity, max-height;
+}
+#faq .container .accordion button[aria-expanded=true] + .accordion-content.plus {
+  max-height: 22em;
+}
+#faq .container .accordion button[aria-expanded=true] + .accordion-content.plusplus {
+  max-height: 72em;
+}
+@media only screen and (max-width: 616px) {
+  #faq .container .accordion button[aria-expanded=true] + .accordion-content {
+    max-height: 18em;
+  }
+  #faq .container .accordion button[aria-expanded=true] + .accordion-content.plus {
+    max-height: 28em;
+  }
+  #faq .container .accordion button[aria-expanded=true] + .accordion-content.plusplus {
+    max-height: 84em;
+  }
+}
+#faq .container .accordion .accordion-content {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: opacity 200ms linear, max-height 200ms linear;
+  will-change: opacity, max-height;
+}
+#faq .container .accordion .accordion-content a {
+  text-decoration: underline;
+}
+#faq .container .accordion .accordion-content.flex {
+  display: flex;
+  align-items: center;
+  gap: 64px;
+}
+@media only screen and (max-width: 439px) {
+  #faq .container .accordion .accordion-content.flex {
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+    gap: 0px;
+  }
+  #faq .container .accordion .accordion-content.flex a {
+    margin: 32px auto 0px;
+  }
+}
+#faq .container .accordion .accordion-content p {
+  margin: 32px 0;
+  line-height: 24px;
+}
+#faq .container ul {
+  list-style-type: square;
+  margin-left: 16px;
 }
 
 .beginning {
