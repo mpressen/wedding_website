@@ -66,23 +66,26 @@ body .font-36 {
   font-size: 36px;
 }
 
-.hero .container {
+.container {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 64px;
   flex-wrap: wrap;
+  width: 100%;
 }
-.hero .container .column {
+
+.column {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: 0px 32px;
   gap: 32px;
 }
-.hero .container .column p {
+.column p {
   text-align: center;
 }
+
 .hero .container .column img {
   min-width: 304px;
 }
@@ -249,7 +252,7 @@ body .font-36 {
     max-height: 28em;
   }
   #faq .container .accordion button[aria-expanded=true] + .accordion-content.plusplus {
-    max-height: 84em;
+    max-height: 94em;
   }
 }
 #faq .container .accordion .accordion-content {
@@ -286,76 +289,26 @@ body .font-36 {
   margin-left: 16px;
 }
 
-.beginning {
-  max-width: 787.81px;
-}
-
-@media only screen and (max-width: 743px) {
-  #parcours .flex-row {
-    justify-content: center;
-    flex-wrap: wrap-reverse;
+@media only screen and (max-width: 1152px) {
+  #contacts img {
+    width: 100%;
   }
 }
-#parcours .diploma {
-  text-align: center;
+@media only screen and (max-width: 616px) {
+  #contacts iframe {
+    width: 400px;
+    height: 300px;
+  }
 }
-
-#infos .addresses {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 64px;
-  justify-content: center;
-}
-#infos .addresses .address {
-  display: flex;
-  flex-direction: column;
-  gap: 32px;
-}
-#infos .addresses .address iframe {
-  border-radius: 16px;
-  max-width: 100%;
-}
-#infos .texts {
-  display: flex;
-  flex-direction: column;
-  gap: 32px;
-  text-align: center;
-}
-#infos .texts .phone {
-  color: black;
-  padding: 16px 64px;
-  border-radius: 15px;
-  border: 1px solid black;
-}
-
-.links {
-  display: flex;
-  flex-direction: column;
-  gap: 32px;
-}
-.links a {
-  text-decoration: underline;
-  font-size: 20px;
-  font-weight: normal;
-  text-align: center;
-  line-height: 30px;
-}
-.links p {
-  line-height: 24px;
+@media only screen and (max-width: 416px) {
+  #contacts iframe {
+    width: 100%;
+  }
 }
 
 .markdown-separator-xl {
-  margin: 64px 0;
+  margin: 128px 0;
 }
-
-.markdown-separator-l {
-  margin: 32px 0;
-}
-
-.markdown-separator-m {
-  margin: 16px 0;
-}
-
 header {
   background-color: #E5DFC8;
 }

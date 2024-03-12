@@ -28,18 +28,6 @@ $website-background: #FFFFFF;
   box-sizing: border-box;
 }
 
-// html,
-// body {
-//   height: 100%;
-// }
-
-// .full-height {
-//   display: flex;
-//   flex-direction: column;
-//   height: 100%;
-//   overflow-x: hidden;
-// }
-
 // shared styles
 body {
   font-family: "LibreCaslonText";
@@ -98,25 +86,30 @@ body {
   }
 }
 
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 64px;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0px 32px;
+  gap: 32px;
+
+  p {
+    text-align: center;
+  }
+}
+
 .hero {
   .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 64px;
-    flex-wrap: wrap;
-
     .column {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      margin: 0px 32px;
-      gap: 32px;
-
-      p {
-        text-align: center;
-      }
-
       img {
         min-width: 304px;
 
@@ -313,7 +306,7 @@ body {
             }
 
             &.plusplus {
-              max-height: 84em;
+              max-height: 94em;
             }
           }
         }
@@ -361,88 +354,29 @@ body {
 }
 
 
-
-
-
-.beginning {
-  max-width: 787.81px;
-}
-
-#parcours {
-  .flex-row {
-    @media only screen and (max-width: 743px) {
-      justify-content: center;
-      flex-wrap: wrap-reverse;
+#contacts {
+  img {
+    @media only screen and (max-width: 1152px) {
+      width: 100%;
     }
   }
 
-  .diploma {
-    text-align: center
-  }
-
-}
-
-#infos {
-  .addresses {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 64px;
-    // align-items: center;
-    justify-content: center;
-
-    .address {
-      display: flex;
-      flex-direction: column;
-      gap: 32px;
-
-      iframe {
-        border-radius: 16px;
-        max-width: 100%;
-      }
+  iframe {
+    @media only screen and (max-width: 616px) {
+      width: 400px;
+      height: 300px;
     }
-  }
 
-  .texts {
-    display: flex;
-    flex-direction: column;
-    gap: 32px;
-    text-align: center;
-
-    .phone {
-      color: black;
-      padding: 16px 64px;
-      border-radius: 15px;
-      border: 1px solid black;
+    @media only screen and (max-width: 416px) {
+      width: 100%;
     }
-  }
-}
-
-.links {
-  display: flex;
-  flex-direction: column;
-  gap: 32px;
-
-  a {
-    text-decoration: underline;
-    font-size: 20px;
-    font-weight: normal;
-    text-align: center;
-    line-height: 30px;
-  }
-
-  p {
-    line-height: 24px;
   }
 }
 
 .markdown-separator-xl {
-  margin: 64px 0;
-}
+  margin: 128px 0;
 
-.markdown-separator-l {
-  margin: 32px 0;
-}
-
-.markdown-separator-m {
-  margin: 16px 0;
+  @media only screen and (max-width: 933px) {
+    // margin: 0px 0;
+  }
 }
