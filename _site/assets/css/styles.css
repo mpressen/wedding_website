@@ -34,7 +34,7 @@ body a:hover {
 }
 body h1,
 body h2 {
-  font-size: 48px;
+  font-size: 36px;
   font-weight: normal;
   text-align: center;
 }
@@ -59,11 +59,20 @@ body .italic {
 body .bold {
   font-weight: bold;
 }
-body .font-64 {
-  font-size: 64px;
+body .underlined {
+  text-decoration: underline;
+}
+body .underlined:hover {
+  background-color: #E5DFC8;
+}
+body .font-48 {
+  font-size: 48px;
 }
 body .font-36 {
   font-size: 36px;
+}
+body .font-24 {
+  font-size: 24px;
 }
 
 .container {
@@ -190,6 +199,9 @@ body .font-36 {
   color: #E5DFC8;
   border: 1px solid #E5DFC8;
 }
+#faq .container .accordion button .accordion-title {
+  font-family: "LibreCaslonText";
+}
 @media only screen and (max-width: 370px) {
   #faq .container .accordion button .accordion-title {
     display: inline-block;
@@ -264,6 +276,9 @@ body .font-36 {
 }
 #faq .container .accordion .accordion-content a {
   text-decoration: underline;
+}
+#faq .container .accordion .accordion-content a:hover {
+  background-color: #E5DFC8;
 }
 #faq .container .accordion .accordion-content.flex {
   display: flex;
