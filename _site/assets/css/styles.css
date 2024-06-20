@@ -208,6 +208,9 @@ body .font-24 {
     width: 280px;
   }
 }
+#faq .container .accordion button .colored {
+  color: red;
+}
 #faq .container .accordion button .icon {
   display: inline-block;
   position: absolute;
